@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  ANSWERS
+        // 1
+    let numbers  = [12,14,16,18,20,22,24,26,4,28];
+    let doubledNumbers =numbers.map(x => x * 2)
+    console.log(doubledNumbers);
+    // 2
+    let studentScores = [45,67,89,34,90,76,54];
+    let scoresgreaterThan60 = studentScores.filter(a=>a >60);
+    console.log(scoresgreaterThan60);
+    
+    // 3
+        let reducescore = studentScores.reduce((add ,d) => add + d,0)
+        console.log(reducescore)
+     //4
+        let fruits =["apple","banana","mango","orange","pear"]
+        let sliceFruit =fruits.slice(0,3);
+        console.log(sliceFruit)
+        // 5
+        fruits.splice(2,1,"grape");
+        console.log(fruits);
+        //6
+        let firstabove80 =studentScores.find(c =>c >80)
+        console.log(firstabove80);
+        // 7
+        fruits.forEach(fruits => {
+            console.log (fruits.toUpperCase())
+        })
+        // 7
+// let upperCaseFruits = fruits.forEach((fruits) => {
+//   console.log(fruits.toUpperCase());
+// });
+ 
+
+//8
+let names = ["John", "Jane", "Mark", "Mary"];
+console.log(names.includes("Mark"));
+
+
+//9
+let sortScore = studentScores.sort((a, b) => a - b);
+console.log(sortScore);
+
+
+//10 
+let firstColourArray = ["red", "blue",];
+let SecondColourArray = ["green", "yellow"];
+console.log(firstColourArray.concat(SecondColourArray));
+
+    </script>
+</body>   
+</html>
