@@ -14,10 +14,10 @@ if (number > 0) {
   console.log("The number is zero");
 }
 // SECTION 2 (question 7)
-function Good(a, b){
+function add(a, b){
     return a + b;
 }
-   console.log(Good(4,5));
+   console.log(add(4,5));
 
 //    SECTION 2 (QUESTION 8)
    function checkEvenOrOdd(number) {
